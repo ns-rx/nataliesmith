@@ -42,7 +42,9 @@ The site uses a child theme of Twenty Twenty-Four (v1.2+).
 
 ## Coding Standards
 
-This project follows WordPress Coding Standards. You can run checks using:
+This project follows WordPress Coding Standards.
+
+You can run checks using:
 `composer phpcs`
 
 And automatically fix some issues with:
@@ -54,4 +56,4 @@ This project is licensed under the GPL License.
 
 ## Author
 
-Developed by ns-rx (hello@nataliesmith.dev)
+Developed by [Natalie Smith](https://nataliesmith.dev/)
