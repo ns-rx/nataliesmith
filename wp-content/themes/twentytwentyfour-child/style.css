@@ -1,0 +1,117 @@
+/*
+Theme Name: Twenty Twenty-Four Child
+Template: twentytwentyfour
+*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+.wp-block-navigation-item__label:focus,
+.wp-block-navigation-item__content:focus {
+	outline-width: 0 !important;
+}
+
+.wp-block-navigation a:where(:not(.wp-element-button)):hover {
+	color: #fce8ef !important;
+	text-decoration: none;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+h1 span {
+	color: #e91e63;
+}
+
+.mt-5 {
+	margin-top: 5px;
+}
+
+.wp-element-button:hover,
+.wp-block-button__link:hover {
+	background-color: #333333;
+}
+
+.form-col {
+	position: relative;
+}
+
+form.forminator-ui input,
+form.forminator-ui textarea {
+	background-color: transparent !important;
+	color: white !important;
+	border-bottom: 1px solid white !important;
+	padding: 10px 0 !important;
+}
+
+form.forminator-ui ::placeholder {
+	color: #f9f9f9 !important;
+	opacity: 0.8 !important; /* Firefox */
+}
+
+form.forminator-ui ::-ms-input-placeholder { /* Edge 12 -18 */
+	color: #f9f9f9 !important;
+	opacity: 0.8 !important;
+}
+
+form.forminator-ui .forminator-button-submit {
+	background-color: #e91e63 !important;
+	color: #fff !important;
+	border-radius: .33rem !important;
+	font-size: 0.9rem !important;
+	font-style: normal;
+	font-weight: 500;
+	line-height: inherit;
+	padding: 0.6rem 1rem !important;
+}
+
+form.forminator-ui .forminator-has_error input,
+form.forminator-ui .forminator-has_error textarea {
+	box-shadow: none !important;
+}
+
+footer.wp-block-template-part {
+	margin-top: 0;
+}
+
+@media (max-width: 781px) {
+	.reverse-sm {
+		flex-direction: column-reverse;
+	}
+	.spacer-sm-20 {
+		height: 20px !important;
+		margin-top: 0 ;
+	}
+	.hero h1,
+	.hero h2 {
+		text-align: center;
+	}
+	.img-nat,
+	.img-mrp {
+		float: none !important;
+		max-width: 200px;
+		display: block;
+		margin: 0 auto !important;
+	}
+	.wp-block-buttons {
+		margin-top: 20px !important;
+	}
+}
+
+@media (min-width: 782px) {
+	.img-nat {
+		margin-top: -30px !important;
+	}
+	.img-mrp {
+		margin-bottom: -100px !important;
+	}
+	.my-work .wp-block-group {
+		padding: 0 70px;
+	}
+	.form-stars {
+		position: absolute;
+		right: -70px;
+	}
+}

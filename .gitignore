@@ -1,0 +1,63 @@
+# WordPress core (as it's a dependency)
+/wp/
+
+# Composer
+/vendor/
+
+# WordPress content
+/wp-content/uploads/
+/wp-content/upgrade/
+/wp-content/cache/
+/wp-content/backups/
+
+# Plugins (as they're managed by Composer)
+/wp-content/plugins/*
+!/wp-content/plugins/index.php
+
+# Themes (keep only your child theme)
+/wp-content/themes/*
+!/wp-content/themes/twentytwentyfour-child/
+
+# Configuration
+wp-config.php
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Node modules (if you use any frontend build tools)
+node_modules/
+
+# Development
+LocalValetDriver.php

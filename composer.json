@@ -1,0 +1,52 @@
+{
+    "name": "nataliesmith/website",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "ns-rx",
+            "email": "hello@nataliesmith.dev"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "johnpbloch/wordpress": "^6.6.1",
+        "wpackagist-plugin/forminator": "^1.34.0",
+        "wpackagist-plugin/wp-migrate-db": "^2.6.11",
+        "wpackagist-theme/twentytwentyfour": "^1.2"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "exclude": [
+            "wp-content/plugins/hello.php",
+            "wp-content/themes/twentytwentytwo",
+            "wp-content/themes/twentytwentythree"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "johnpbloch/wordpress-core-installer": true,
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+    "phpcs": "phpcs --standard=phpcs.xml.dist",
+    "phpcbf": "phpcbf --standard=phpcs.xml.dist"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
+    }
+}
