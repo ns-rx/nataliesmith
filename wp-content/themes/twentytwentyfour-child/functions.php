@@ -17,6 +17,6 @@ function ns_enqueue_styles() {
 		'ns-style',
 		get_stylesheet_uri(),
 		array(),
-		'1.0.0'
+		'1.0.1'
 	);
 }
