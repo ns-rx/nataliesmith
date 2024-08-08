@@ -4,9 +4,8 @@
 
     <!-- What to scan -->
     <file>wp-content/themes/twentytwentyfour-child</file>
-    <exclude-pattern>/vendor/</exclude-pattern>
-    <exclude-pattern>/node_modules/</exclude-pattern>
-    <exclude-pattern>/wp/</exclude-pattern>
+    <exclude-pattern>*/vendor/</exclude-pattern>
+    <exclude-pattern>*/node_modules/</exclude-pattern>
 
     <!-- How to scan -->
     <arg value="sp"/> <!-- Show sniff and progress -->
@@ -24,13 +23,4 @@
     <rule ref="WordPress">
         <!-- Your customizations here -->
     </rule>
-
-    <!-- Exclude the Composer Vendor directory. -->
-    <exclude-pattern>/vendor/*</exclude-pattern>
-
-    <!-- Exclude the Node Modules directory. -->
-    <exclude-pattern>/node_modules/*</exclude-pattern>
-
-    <!-- Exclude minified Javascript files. -->
-    <exclude-pattern>*.min.js</exclude-pattern>
 </ruleset>
