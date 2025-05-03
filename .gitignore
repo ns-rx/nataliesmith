@@ -13,6 +13,7 @@
 # Plugins (as they're managed by Composer)
 /wp-content/plugins/*
 !/wp-content/plugins/index.php
+!/wp-content/plugins/copyright-date-block/
 
 # Themes (keep only your child theme)
 /wp-content/themes/*
