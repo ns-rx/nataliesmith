@@ -14,6 +14,7 @@
 /wp-content/plugins/*
 !/wp-content/plugins/index.php
 !/wp-content/plugins/copyright-date-block/
+!/wp-content/plugins/copyright-date-block-dynamic/
 
 # Themes (keep only your child theme)
 /wp-content/themes/*
